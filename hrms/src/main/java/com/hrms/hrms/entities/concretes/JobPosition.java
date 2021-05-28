@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-@Table(name="job_position")
+@Table(name="job_positions")
 
 
 public class JobPosition {
@@ -28,20 +28,9 @@ public class JobPosition {
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="positions")
+	@Column(name="position")
 	private String position;
 	
-	
-//	public JobPositions() {
-//		super();
-//	}
-//
-//	public JobPositions(int id, String position) {
-//		super();
-//		this.id = id;
-//		this.position = position;
-//	}
-
 
 
 }

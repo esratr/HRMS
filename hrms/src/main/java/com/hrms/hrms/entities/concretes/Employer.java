@@ -9,25 +9,25 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-
 @EqualsAndHashCode(callSuper=false)
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name="candidate_users")
-public class Candidate {
+@Table(name="employer_users")
 
-		@Id
-		@Column(name="name")
-		private String name;
-		
-		@Column(name="surname")
-		private String surname;
-		
-		@Column(name="national_identity")
-		private String national_identity;
-		
-		@Column(name="birth_year")
-		private String birth_year;
+public class Employer extends User {
+	
+
+			@Id
+			@Column(name="company_name")
+			private String companyName;
+			
+			@Column(name="web_address")
+			private String webAdress;
+			
+			@Column(name="phone_number")
+			private String phoneNumber;
+			
+			
 
 }

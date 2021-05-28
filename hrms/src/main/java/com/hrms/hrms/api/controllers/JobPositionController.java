@@ -1,4 +1,4 @@
-package com.hrms.hrms.api;
+package com.hrms.hrms.api.controllers;
 
 import java.util.List;
 

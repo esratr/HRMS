@@ -14,20 +14,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name="candidate_users")
-public class Candidate {
+@Table(name="staff_users")
+public class Staff extends User {
 
-		@Id
-		@Column(name="name")
-		private String name;
-		
-		@Column(name="surname")
-		private String surname;
-		
-		@Column(name="national_identity")
-		private String national_identity;
-		
-		@Column(name="birth_year")
-		private String birth_year;
+	
+			@Id
+			@Column(name="name")
+			private String name;
+			
+			@Column(name="surname")
+			private String surname;
+			
+			
 
 }
